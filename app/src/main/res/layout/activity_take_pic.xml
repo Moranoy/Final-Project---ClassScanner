@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.galbenabu1.classscanner.Activities.TakePicActivity">
+
+    <TextureView
+        android:id="@+id/bestTextureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnClearPicturesTaken"
+        style="@android:style/Widget.Holo.Button.Small"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="onClearPicturesTakenClick"
+        android:text="Restart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bestTextureView"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnTakeAPic"
+        style="@android:style/Widget.Holo.Button.Small"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="@+id/bestTextureView"
+        app:layout_constraintLeft_toRightOf="@+id/btnClearPicturesTaken"
+        app:layout_constraintRight_toLeftOf="@+id/btnFinishTakingPictures" />
+
+    <Button
+        android:id="@+id/btnFinishTakingPictures"
+        style="@android:style/Widget.Holo.Button.Small"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="onFinishTakingPictures"
+        android:text="Finish"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bestTextureView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
